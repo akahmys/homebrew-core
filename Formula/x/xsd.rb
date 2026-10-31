@@ -38,6 +38,8 @@ class Xsd < Formula
     end
   end
 
+  deny_network_access!
+
   def install
     odie "`libxsd` resource needs to be updated!" if version != resource("libxsd").version
 
